@@ -1,0 +1,25 @@
+body {
+  background-color: #F2F2F2;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  color: #333333;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #333333;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+/*# sourceMappingURL=main.css.map */
