@@ -1,6 +1,7 @@
 body {
   background-color: #f2f2f2;
   color: #333333;
+  width: 1366px;
 }
 
 /* HEADER */
@@ -15,24 +16,35 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 22px;
+  margin-top: 90px;
+  margin-bottom: 40px;
 }
 
 /* SECTION 1 */
 
-.main-article {
-  background-color: #ffffff;
-  margin-left: 221px;
-  margin-right: 102px;
-  padding: 40px 85px 40px 159px;
+.section--one {
   display: flex;
+  margin-left: 100px;
+  margin-right: 0;
 }
 
-.main-article > img {
+.main--img {
   height: 250px;
   width: 268px;
   border: 20px solid white;
   align-self: center;
+  z-index: 1;
 }
+
+.main-article {
+  background-color: #ffffff;
+  margin-left: -150px;
+  margin-right: 102px;
+  margin-bottom: 40px;
+  padding: 40px 85px 40px 159px;
+  display: flex;
+}
+
 .main-article--info {
   display: flex;
   flex-direction: column;
@@ -47,6 +59,9 @@ h1 {
 .info--date {
   font-weight: 600;
   color: #999999;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .main-article--main {
@@ -75,4 +90,70 @@ h1 {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   text-transform: capitalize;
+}
+
+/* SECTION TWO */
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 23px;
+  color: #333333;
+  text-align: left;
+}
+
+.article--section {
+  display: flex;
+  margin: 22px 101px;
+  gap: 22px;
+}
+.article-preview {
+  background-color: white;
+  width: 271px;
+}
+
+.article--body {
+  padding: 22px;
+}
+
+.article--img {
+  height: 215px;
+  width: 271px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  color: #ae9957;
+  border: 1px solid #ae9957;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  margin-top: 50px;
+}
+
+/* SECTION 3 */
+
+.section--three {
+  background-image: url("assets/pic1.png");
+  background-size: cover;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 64px;
+  padding-top: 125px;
+  padding-bottom: 50px;
+}
+
+.border {
+    border-bottom: 10px solid white;
+    width: 193px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
