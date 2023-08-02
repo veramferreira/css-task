@@ -1,21 +1,20 @@
 body {
   background-color: #f2f2f2;
   color: #333333;
-  width: 1366px;
 }
 
 /* HEADER */
 
 h1 {
   font-family: "Playfair Display", serif;
-  font-size: 40px;
+  font-size: 3.5vw;
   color: #333333;
 }
 
 .header {
   display: flex;
   justify-content: center;
-  gap: 22px;
+  gap: 2vw;
   margin-top: 90px;
   margin-bottom: 40px;
 }
@@ -53,7 +52,7 @@ h1 {
 .main-article--info span {
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1vw;
 }
 
 .info--date {
@@ -61,7 +60,7 @@ h1 {
   color: #999999;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1vw;
 }
 
 .main-article--main {
@@ -71,7 +70,7 @@ h1 {
 .main-article--text > h2 {
   font-family: "Playfair Display", serif;
   font-style: italic;
-  font-size: 64px;
+  font-size: 4vw;
   color: #333333;
   text-align: left;
   margin-bottom: 25px;
@@ -81,14 +80,14 @@ h1 {
 .main-article--text > p {
   font-family: "Inter", sans-serif;
   color: #999999;
-  font-size: 24px;
+  font-size: 2vw;
   text-align: left;
 }
 
 .main-article--more {
   color: #ae9957;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 1vw;
   text-transform: capitalize;
 }
 
@@ -97,28 +96,33 @@ h1 {
 h3 {
   font-family: "Playfair Display", serif;
   font-style: italic;
-  font-size: 23px;
+  font-size: 1.5vw;
   color: #333333;
   text-align: left;
 }
 
 .article--section {
   display: flex;
-  margin: 22px 101px;
-  gap: 22px;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: 5.5vw;
+  gap: 1.5vw;
 }
 .article-preview {
-  background-color: white;
+    flex: 1 0 calc(25% - 1.5vw);
   width: 271px;
 }
 
 .article--body {
-  padding: 22px;
+    padding: 1.5vw;
+    background-color: white;
+
 }
 
 .article--img {
-  height: 215px;
-  width: 271px;
+  height: auto;
+  width: 100%;
+
 }
 
 button {
@@ -127,7 +131,7 @@ button {
   color: #ae9957;
   border: 1px solid #ae9957;
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 1vw;
   text-transform: uppercase;
   padding: 20px 50px;
   margin-top: 50px;
@@ -135,9 +139,16 @@ button {
 
 /* SECTION 3 */
 
-.section--three {
+.section-three {
   background-image: url("assets/pic1.png");
   background-size: cover;
+  margin-top: 90px;
+}
+
+.section-three--body {
+  margin: 125px 317px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -145,15 +156,29 @@ h2 {
   text-align: center;
   font-family: "Playfair Display", serif;
   font-style: italic;
-  font-size: 64px;
+  font-size: 4vw;
   padding-top: 125px;
-  padding-bottom: 50px;
 }
 
 .border {
-    border-bottom: 10px solid white;
-    width: 193px;
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 50px;
+  border-bottom: 10px solid white;
+  width: 193px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2vw;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.section-three--button {
+    padding-bottom: 20px;
+    background-color: #ae9957;
+    color: white;
 }
